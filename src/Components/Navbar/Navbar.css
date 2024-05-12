@@ -1,0 +1,25 @@
+nav{
+    width: 100%; /* set the size of the nav*/
+    /* background: #333; */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; /* this will overlap all element when we scroll the webpage*/
+}
+.logo{
+    width: 180px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
