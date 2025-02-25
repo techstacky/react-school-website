@@ -18,8 +18,58 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin: 5px 20px;
+    margin: 15px 20px;
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+.dark-nav{
+    background: #212EA0;
+    transition: 0.5s;
+}
+.menu-icon{
+    display: none; /*menu is hidden for all screen size*/
+}
+/* --media query--- */
+@media (max-width: 1000px){
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+@media (max-width: 850px){
+    nav{
+        padding: 15px 0;
     
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0; /*the right value was changed from 0 to -200 to remove the nav bar on small screen*/
+        background: #212EA0;
+        z-index: -1;
+        max-width: 200px;
+        padding-top: 30px;
+        transition: 0.5s;
+        bottom: 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .btn{
+        padding: 10px 12px;
+    }
+    .menu-icon{
+        display: block; /*display menu icon on small screen*/
+        width: 30px;
+        padding-top: 8px;
+        padding-right: 4px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px; 
+    }
+
 }
